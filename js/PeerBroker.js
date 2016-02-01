@@ -17,7 +17,7 @@ function video_init(video_id, cardboard_id) {
     call.on('stream', function(stream) {
       video.src = window.URL.createObjectURL(stream);
     });
-    theta_view();
+    cardboard_view();
   });
 
   if(cardboard_id) {
