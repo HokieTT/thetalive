@@ -1,4 +1,4 @@
-var theta_view = function () {
+var cardboard_view = function () {
   var scene = new THREE.Scene();
   var width  = 900;
   var height = 600;

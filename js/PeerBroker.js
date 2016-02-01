@@ -17,6 +17,7 @@ function video_init(video_id, cardboard_id) {
     call.on('stream', function(stream) {
       video.src = window.URL.createObjectURL(stream);
     });
+    theta_view();
   });
 
   if(cardboard_id) {
@@ -29,8 +30,6 @@ function video_init(video_id, cardboard_id) {
         console.log('Failed to set local stream or complete call' ,err);
       }
     );
-    cardboard_view();
-  } else {
     theta_view();
   }
 }
