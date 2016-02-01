@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>cardboard</title>
+  <meta name="description" content="thetascope">
+  <meta name="author" content="Sean Herrala">
+</head>
+<body>
+  <div class="cardboard-id"></div>
+  <video id="theta-video" autoplay muted="true" style="display:none"></video>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/DeviceOrientationControls.js"></script>
+  <script src="js/StereoEffect.js"></script>
+  <script src="js/peer.min.js"></script>
+  <script src="js/PeerBroker.js"></script>
+  <script src="js/CardboardView.js"></script>
+  <script>
+    window.addEventListener( 'DOMContentLoaded', video_init('theta-video',0), false );
+  </script>     
+</body>
+</html>

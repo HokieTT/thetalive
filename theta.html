@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>theta</title>
+  <meta name="description" content="thetascope">
+  <meta name="author" content="Sean Herrala">
+</head>
+<body>
+  <input type="text" id="cardboard-id" placeholder="Cardboard ID"><input type="button" id="video-init" value="Send to Cardboard">
+  <video id="theta-video" autoplay muted="true" style="display:none"></video>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/three.min.js"></script>
+  <script src="js/OrbitControls.js"></script>
+  <script src="js/peer.min.js"></script>
+  <script src="js/PeerBroker.js"></script>
+  <script src="js/ThetaView.js"></script>
+  <script>
+    $('#video-init').click(function() {
+      video_init('theta-video',$('#cardboard-id').val());
+    });
+  </script>     
+</body>
+</html>
